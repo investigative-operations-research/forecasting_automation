@@ -1,3 +1,4 @@
+![](dashboard.png)
 
 * Easy to see model historical performance in a single number calculated as (prediction/actual) as a percentage which could be monthly or yearly for a quick intuitive sense. Eg. if the actual value was 100, but the model predicted 96.8 - then [1 - (96.8/100)] x 100 = -3.2% as performance metric as per above example.
 * The chart showing actuals vs predictions was a simple visual way of showing how well a model captured patterns like trend and seasonality compared to actual data.
@@ -42,7 +43,7 @@ QUANTITATIVE: Between 2022 to 2023 the forecasting work was given to a team of d
 
 QUAL-QUANT: By combining qualitative and quantitative approaches, my first successul forecast within +/-5% arrived within 2 weeks and kept creeping up over the coming months while allowing for further feedback and refinement from stakeholders for incremental improvement.
 
- 
+ ![](historical-success-rate.png)
 
 By taking an iterative approach to model testing - from univariate models like auto-regression or SARIMA to multivariate models or others like deep neural nets as needed - we could save further time and compute over time with each new forecast by also testing if the timeseries variance and trends were similar to the previous forecast to skip re-training otherwise to train a new model.
 
@@ -52,7 +53,7 @@ I built a test harness in python usng a functional approach to keep the logic mo
 
  
 
- 
+ ![](forecasting-steps.png)
 
  
 
@@ -76,6 +77,6 @@ This also meant we did not have to "wait and see" how models might perform as we
  
 # The result
 
- 
+ ![](example-walkforward-graph.png)
 
 I was able to go from zero forecasts within spec to having 17% of international roaming destinations forecast within +/-5% according to backtesting over the last 12 months which accounted for just over 80% of the total network usage globally.
